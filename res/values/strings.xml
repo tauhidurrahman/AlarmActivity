@@ -1,0 +1,96 @@
+<resources>
+
+    <string name="app_name">AnthropoSophia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">AnthropoSophia</string>
+    <string name="SamplingPeriod">30</string>
+    <string name="DefaultSampPeriodMin">15</string>
+    <string name="title_activity_manual_capture">Manual Capture</string>
+    <string name="Flag_isRunning">FLAG_ISRUNNING</string>
+    <string name="Question0Prompt">Image Tag?</string>
+    <string name="Question1Prompt">Right now, I am?</string>
+    <string name="Question2Prompt">What best describes your activity?</string>
+    <string name="Question3Prompt">How crowded is the place?</string>
+    <string name="Question4Prompt">What type of place is this?</string>
+    <string name="Question5Prompt">Would you choose live here?</string>
+    <string name="Question6Prompt">Would you choose to socialize here?</string>
+    <string name="Question7Prompt">Scary or Safe?</string>
+    <string name="Question8Prompt">Fun or Boring?</string>
+    <string name="Question9Prompt">Cheery or Depressive?</string>
+	
+    <string-array name="Question1">
+        <item>Right now, I am?</item>
+        <item>Feeling great</item>
+        <item>Feeling good</item>
+        <item>A little stressed</item>
+        <item>Definitely stressed</item>
+        <item>Stressed out!</item>
+    </string-array>
+    <string-array name="Question2">
+        <item>What best describes your activity?</item>
+        <item>Studying</item>
+        <item>Eating</item>
+        <item>Hang out</item>
+        <item>Playing</item>
+        <item>Relaxing</item>
+    </string-array>
+    <string-array name="Question3">
+        <item>How crowded is the place?</item>
+        <item>Just me</item>
+        <item>2-5 people</item>
+        <item>6-25 people</item>
+        <item>From 26 to 100 people</item>
+        <item>More than 100 people</item>
+    </string-array>
+    <string-array name="Question4">
+        <item>What type of place is this?</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Study</item>
+        <item>Restaurant</item>
+        <item>Shop</item>
+        <item>Movie</item>
+        <item>Outdoor</item>
+    </string-array>
+    
+    <string-array name="Question5">
+        <item>Would you choose live here?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="Question6">
+        <item>Would you choose to socialize here?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    
+    <string-array name="Question7">
+        <item>Scary or Safe?</item>
+        <item>Scary</item>
+        <item>Safe</item>
+        <item>neither</item>
+    </string-array>
+    <string-array name="Question8">
+        <item>Fun or Boring?</item>
+        <item>Fun</item>
+        <item>Boring</item>
+        <item>neither</item>
+    </string-array>
+    <string-array name="Question9">
+        <item>Cheery or Depressive?</item>
+        <item>Cheery</item>
+        <item>Depressive</item>
+        <item>neither</item>
+    </string-array>
+
+    <string name="ticker_text">Hi from PAC Group!</string>
+    <string name="notification_title">AnthropoSophia</string>
+    <string name="notification_message">The Mobile Sensor Data Collection is running.</string>
+    <string name="title_activity_show_results">Reward Map</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_leaderboard">Leaderboard</string>
+    <string name="title_activity_manual_capture2">Manual Capture</string>
+    <string name="title_activity_pam">Manual Capture</string>
+
+</resources>

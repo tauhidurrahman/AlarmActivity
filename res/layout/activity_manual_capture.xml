@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        android:id="@+id/LinearLayoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08" >
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_menu_camera"
+            android:onClick="onCaptureCamera"
+            android:text="Camera" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_crop" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/question0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tag the image" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:entries="@array/Question1"
+        android:prompt="@string/Question1Prompt" />
+
+    <Spinner
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:entries="@array/Question2"
+        android:prompt="@string/Question2Prompt" />
+
+    <Spinner
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20" 
+        android:entries="@array/Question3"
+        android:prompt="@string/Question3Prompt" />
+
+    <Spinner
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20" 
+        android:entries="@array/Question4"
+        android:prompt="@string/Question4Prompt" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.16"
+        android:onClick="onClickNext"
+        android:text="Next"/>
+
+</LinearLayout>

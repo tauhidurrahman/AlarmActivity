@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/staticmap_ithaca" >
+
+    <TextView
+        android:id="@+id/artsQuad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="94dp"
+        android:text="$$$_artsquad"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/collegeTown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="132dp"
+        android:layout_marginLeft="30dp"
+        android:text="$$$_colTown"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/enggQuad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/artsQuad"
+        android:layout_centerVertical="true"
+        android:text="$$$_enggquad"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/aggQuad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/artsQuad"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="31dp"
+        android:text="$$$_aggquad"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

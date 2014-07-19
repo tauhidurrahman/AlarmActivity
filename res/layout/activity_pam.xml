@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutpam"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black">
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="Do you associate any emotion with this place?"
+        android:textColor="@android:color/white" >
+
+    </TextView>
+    
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/pam_grid"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:numColumns="4"
+	    android:stretchMode="columnWidth">
+	</GridView>
+	
+	<Button
+         android:id="@+id/pam_reload"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Load more pictures"
+         android:layout_marginTop="20dip">
+    </Button>
+
+</LinearLayout>

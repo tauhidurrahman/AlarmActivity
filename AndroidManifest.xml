@@ -1,0 +1,99 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alarmactivity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".ServiceLocation" >
+        </service>
+        <service
+            android:name=".ServiceMediaRecorder"
+            android:process=":audioCapture" >
+        </service>
+        <service android:name=".ServiceAudioRecord" >
+        </service>
+        <service android:name=".ServiceNetwork" >
+        </service>
+
+        <receiver android:name=".MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="PhoneStatusBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ManualCaptureActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_manual_capture" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.alarmactivity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.alarmactivity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LeaderboardActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_leaderboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.alarmactivity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ManualCapture2Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_manual_capture2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.alarmactivity.ManualCaptureActivity" />
+        </activity>
+        <activity
+            android:name=".PAMActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_pam" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.alarmactivity.ManualCapture2Activity" />
+        </activity>
+    </application>
+
+</manifest>

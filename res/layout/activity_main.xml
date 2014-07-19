@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutRewardmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/staticmap_ithaca" >
+
+        <TextView
+            android:id="@+id/enggQuad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/artsQuad"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="125dp"
+            android:text="engg"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/aggQuad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/enggQuad"
+            android:layout_alignLeft="@+id/enggQuad"
+            android:layout_marginBottom="36dp"
+            android:layout_marginLeft="80dp"
+            android:text="arg"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/artsQuad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/aggQuad"
+            android:layout_centerHorizontal="true"
+            android:text="arts"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/collegeTown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enggQuad"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@+id/artsQuad"
+            android:text="clgT"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/PointTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/sampleCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onLeaderBoard"
+            android:text="LeaderBoard"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_menu_add"
+            android:gravity="center"
+            android:onClick="onManualCapture"
+            android:text="Capture"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startnStop"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+            android:onClick="onClickStartnStop"
+            android:text="Start"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
